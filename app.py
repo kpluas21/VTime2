@@ -11,7 +11,7 @@ st.caption("Add or subtract days from any date.")
 col1, col2 = st.columns(2)
 
 with col1:
-    start_date = st.date_input("Start date", value=date.today())
+    start_date = st.date_input("Start date", value=date.today(), format="MM/DD/YYYY")
 
 with col2:
     num_days = st.number_input(
